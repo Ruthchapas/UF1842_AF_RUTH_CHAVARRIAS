@@ -164,7 +164,7 @@ formAutor.addEventListener("submit", (e) => {
     let htmlResultado = "<ul>";
     for (let i = 0; i < librosFiltrados.length; i++) {
       const libro = librosFiltrados[i];
-      htmlResultado += `<li>${libro.autor} : ${libro.titulo} (${libro.categoria}), ${libro.idioma}, época : ${libro.epoca})</li>`;
+      htmlResultado += `<li>${libro.autor} : ${libro.titulo} (${libro.categoria}, idioma : ${libro.idioma}, época : ${libro.epoca})</li>`;
     }
     htmlResultado += "</ul>";
     resultadoAutor.innerHTML = htmlResultado;
